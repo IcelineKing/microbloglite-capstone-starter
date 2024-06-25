@@ -1,9 +1,9 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const username = document.getElementById("username").value;
-  const fullname = document.getElementById("fullname").value;
-  const password = document.getElementById("password").value;
+  const usernameField = document.getElementById("username");
+  const fullnameField = document.getElementById("fullname");
+  const passwordField = document.getElementById("password");
   const createAccountButton = document.getElementById("createAccountButton");
   const messageDiv = document.querySelector("#messageDiv");
 
@@ -12,11 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
   function register(event) {
     // POST /api/users
     event.preventDefault();
+
     let bodyData = {
-      username: username,
-      fullName: fullname,
-      password: password,
+      username: usernameField.value,
+      fullName: fullnameField.value,
+      password: passwordField.value,
     };
+
+    console.log(bodyData);
+
     const options = {
       method: "POST",
       headers: {
@@ -31,12 +35,23 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(apiBaseURL + "/api/users", options)
       .then((response) => response.json())
       .then((newUser) => {
+        console.log(newUser);
         if (newUser.statusCode === 409) {
           console.log(newUser);
-          messageDiv.innerHTML = "Something wrong";
+          messageDiv.innerHTML = "There's a problem!";
         } else {
           window.location.assign("/login.html"); // redirect to login page to receive token
         }
       });
   }
 });
+
+
+
+
+// notes:
+// users:
+// john doe, jond, 1234
+// tom yarn, tomy, 123456
+// up down, updown, 12345
+// sam brown, samb, pancakes1
