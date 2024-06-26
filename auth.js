@@ -53,7 +53,7 @@ function login(loginData) {
       }
 
       window.localStorage.setItem("login-data", JSON.stringify(loginData));
-      window.location.assign("/posts/posts.html"); // redirect
+      window.location.assign("/posts"); // redirect
 
       return loginData;
     });

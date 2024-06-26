@@ -4,7 +4,6 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Bootstrap CSS -->
@@ -15,15 +14,15 @@
             crossorigin="anonymous"></script>
 
         <!-- Global CSS (CSS rules you want applied to all pages) -->
-        <link rel="stylesheet" href="../global.css">
+        <!-- <link rel="stylesheet" href="../global.css"> -->
 
         <!-- Page-specific CSS -->
-        <link rel="stylesheet" href="./profile.css">
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
 
         <title>/POSTS</title>
 
         <!-- Run BEFORE page is finished loading (before window.onload): -->
-        <script src="/landingpage/scripts/auth.js"></script>
+        <script src="./auth.js"></script>
         <script>
             if (isLoggedIn() === false) window.location.replace("/");
         </script>
@@ -37,8 +36,8 @@
         </header>
 
         <div>
-            <button id="viewPostsBtn">View Other Vineyards</button>
-            <link rel="stylesheet" href="../posts/posts.html">
+            <button id="viewPostsBtn"><a style="text-decoration: none;" href="posts/index.html">View Other
+                    Vineyards</a></button>
         </div>
 
         <main id="blogposts">
@@ -61,7 +60,7 @@
         <footer></footer>
 
         <!-- Page-specific code -->
-        <script src="../landingpage/scripts/posts.js"></script>
+        <script src="posts/posts.js"></script>
     </body>
 
 </html>

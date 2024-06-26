@@ -40,14 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log(newUser);
           messageDiv.innerHTML = "There's a problem!";
         } else {
-          window.location.assign("/login.html"); // redirect to login page to receive token
+          window.location.assign("/index.html"); // redirect to login page to receive token
         }
       });
   }
 });
-
-
-
 
 // notes:
 // users:
