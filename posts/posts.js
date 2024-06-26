@@ -74,7 +74,7 @@ function getPosts() {
       // This is required for endpoints expecting us to send
       // JSON data.
       "Content-Type": "application/json",
-      Authorization: `Bearer ${
+      "Authorization": `Bearer ${
         JSON.parse(window.localStorage.getItem("login-data")).token
       }`,
     },
@@ -90,6 +90,10 @@ function getPosts() {
       //   console.log(posts);
     });
 }
+
+
+
+//NOTES TO DELETE LATER
 
 //SHAPE OF DATA REFERENCES
 // [

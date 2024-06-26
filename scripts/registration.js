@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(newUser);
         if (newUser.statusCode === 409) {
           console.log(newUser);
-          messageDiv.innerHTML = "There's a problem!";
+          messageDiv.innerHTML = "Whoops Try Again!";
         } else {
           window.location.assign("/index.html"); // redirect to login page to receive token
         }

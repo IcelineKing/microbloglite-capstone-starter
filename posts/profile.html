@@ -17,15 +17,16 @@
         <!-- <link rel="stylesheet" href="../global.css"> -->
 
         <!-- Page-specific CSS -->
-        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="../global.css">
 
         <title>/POSTS</title>
 
         <!-- Run BEFORE page is finished loading (before window.onload): -->
-        <script src="./auth.js"></script>
+        <script src="../auth.js"></script>
         <script>
             if (isLoggedIn() === false) window.location.replace("/");
         </script>
+        
     </head>
 
     <body>
@@ -36,31 +37,31 @@
         </header>
 
         <div>
-            <button id="viewPostsBtn"><a style="text-decoration: none;" href="posts/index.html">View Other
+            <button id="viewPostsBtn"><a style="text-decoration: none;" href="index.html">View Other
                     Vineyards</a></button>
         </div>
 
-        <main id="blogposts">
 
-            <div class="card text-bg-dark">
-                <img src="images/posts_background.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+        <main id="blogEntry">
 
 
+            <form>
+                <textarea id="writeBlogEntry" name="message" style="width:200px; height:600px;">
+               Please enter some text.
+                </textarea>
+            </form>
 
 
         </main>
 
+        <div>
+            <button id="submitBlogBtn"><a style="text-decoration: none;" href="/posts/index.html">Grow your Vine</a></button>
+        </div>
+
         <footer></footer>
 
         <!-- Page-specific code -->
-        <script src="posts/posts.js"></script>
+        <script src="profile.js"></script>
     </body>
 
 </html>
