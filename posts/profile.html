@@ -26,10 +26,43 @@
         <script>
             if (isLoggedIn() === false) window.location.replace("/");
         </script>
-        
+
     </head>
 
     <body>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/viness_logo.png" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">Viness</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/posts/index.html">Posts</a>
+                        </li>
+                    </ul>
+
+                    <span class="navbar-text">
+                        The Secret World of Vinyards
+                    </span>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
 
         <header>
             <h1>Profile PAGE</h1>
@@ -46,16 +79,15 @@
 
 
             <form>
-                <textarea id="writeBlogEntry" name="message" style="width:200px; height:600px;">
-               Please enter some text.
-                </textarea>
+                <textarea id="writeBlogEntry" name="message" style="width:200px; height:600px;"></textarea>
             </form>
 
 
         </main>
 
         <div>
-            <button id="submitBlogBtn"><a style="text-decoration: none;" href="/posts/index.html">Grow your Vine</a></button>
+            <button id="submitBlogBtn"><a style="text-decoration: none;" href="/posts/index.html">Grow your
+                    Vine</a></button>
         </div>
 
         <footer></footer>

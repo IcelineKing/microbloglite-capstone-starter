@@ -63,10 +63,12 @@ function createPost(post) {
   return userPostDiv;
 }
 
+
+
 //Displays posts
 
 function getPosts() {
-  // POST /auth/login
+  // making sure theyre logged in
   const options = {
     method: "GET",
     headers: {

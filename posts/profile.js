@@ -9,9 +9,13 @@ const submitBlogBtn = document.getElementById("submitBlogBtn");
 submitBlogBtn.onclick = (e) => {
   e.preventDefault();
   addBlogPost();
+
+  const writeBlogEntry = document.getElementById("writeBlogEntry");
+  writeBlogEntry.value = "";
+  alert("Yay! You've Grown a New Vine!");
 };
 
-//create post
+//create post in the body
 
 function addBlogPost(event) {
   let blogEntry = {
@@ -42,20 +46,16 @@ function addBlogPost(event) {
         console.log(newPost);
         messageDiv.innerHTML = "Whoops Try Again!";
       }
-      //   else {
-      //     window.location.assign("posts/index.html"); // redirect to posts page to view newly added post
-      //   }
     });
 }
 
+// This is to render all of the posts in the Microblog
 function getPosts() {
-  // POST /auth/login
+  //Auth to make sure user has logged in, by requesting their token
   const options = {
     method: "GET",
     headers: {
-      // This header specifies the type of content we're sending.
-      // This is required for endpoints expecting us to send
-      // JSON data.
+      // This header specifies the type of content we're sending. This is required for endpoints expecting us to send JSON data.
       "Content-Type": "application/json",
       Authorization: `Bearer ${
         JSON.parse(window.localStorage.getItem("login-data")).token
@@ -70,7 +70,7 @@ function getPosts() {
         let userPostDiv = createPost(post);
         hostDiv.appendChild(userPostDiv);
       }
-      //   console.log(posts);
+      console.log(posts);
     });
 }
 
@@ -80,3 +80,9 @@ logoutBtn.onclick = (e) => {
   e.preventDefault();
   logout();
 };
+
+//MAY USE THIS, NOT SURE YET:
+//inside box to tell user to type text
+// window.onload = function (){
+//   const writeBlogEntry.innerHTML = "Please enter some text"
+// }
