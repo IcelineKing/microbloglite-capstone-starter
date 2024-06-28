@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
           messageDiv.innerHTML = "Whoops Try Again!";
         } else {
           alert("Yay! You've joined Viness");
-          window.location.assign("/index.html"); // redirect to login page to receive token
+          window.location.assign("/login.html"); // redirect to login page to receive token
         }
       });
   }
@@ -54,3 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // up down, updown, 12345
 // sam brown, samb, pancakes1
 //top bottom, 123456
+//five5, five five,12345
+//six6, six six, 123456

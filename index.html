@@ -29,7 +29,7 @@
     </head>
 
     <body>
-        
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,16 +37,16 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="font-style: italic;">
+                    <a class="navbar-brand" href="index.html">
                         <img src="images/viness_logo.png" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">Viness</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            class="d-inline-block align-text-top" ></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-style: italic;">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link" href="login.html">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registration.html">Create Account</a>
@@ -54,7 +54,7 @@
 
                     </ul>
 
-                    <span class="navbar-text">
+                    <span class="navbar-text" style="font-style: italic;">
                         The Secret World of Vinyards
                     </span>
 
@@ -76,23 +76,24 @@
             </p>
 
             <div>
-                <form id="login">
+                <form id="login" class="center">
                     <div>
                         <label for="username">Username</label>
-                        <input type="text" id="username" minlength="3">
+                        <input type="text" id="username" class="btn btn-outline-success" minlength="3">
                     </div>
 
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" minlength="6">
+                        <input type="password" id="password" class="btn btn-outline-success" minlength="6">
                     </div>
 
-                    <button id="loginButton" type="submit">Login</button>
+                    <button id="loginButton" class="btn btn-outline-success" type="submit">Login</button>
                 </form>
 
-                <div>
-                    <button id="registerBtn"><a style="text-decoration: none;"
-                            href="registration.html">Register</a></button>
+                <div style="font-style: italic;" class="submit">
+                    No account?
+                    <a style="text-decoration: none;"
+                            href="registration.html">Click Here to Join</a></button>
                 </div>
             </div>
 

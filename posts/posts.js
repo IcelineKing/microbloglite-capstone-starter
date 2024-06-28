@@ -26,7 +26,7 @@ function createPost(post) {
 
   let postImage = document.createElement("img");
 
-  postImage.src = "/images/posts_background.jpg";
+  postImage.src = "../images/posts_3rd_background.jpg";
   postImage.className = "card-img";
   postImage.alt = "...";
 
@@ -94,7 +94,6 @@ function getPosts() {
 }
 
 
-
 //NOTES TO DELETE LATER
 
 //SHAPE OF DATA REFERENCES
@@ -124,3 +123,14 @@ function getPosts() {
 //     <p class="card-text"><small>Last updated 3 mins ago</small></p>
 // </div>
 // </div> */}
+
+// <div class="toast">
+//   <div class="toast-header">
+//   <img src="..." class="rounded me-2" alt="...">
+//   <strong class="me-auto">Bootstrap</strong>
+//   <small>11 mins ago</small>
+//     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+//         additional content. This content is a little bit longer.</p>
+//     <p class="card-text"><small>Last updated 3 mins ago</small></p>
+// </div>
+// </div>

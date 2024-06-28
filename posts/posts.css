@@ -1,1 +1,86 @@
 /* Posts Page CSS */
+
+
+body {
+    background-image:url('../images/websiteBackground.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+
+
+/* style to view posts layout */
+.post-feed {
+    display: flow-root;
+    gap: 50px;
+    color: white;
+    width: fit-content;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; */
+    background-color: white;
+    padding: 10px 51px 10px 10px;
+    /* align-content: center; */
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: none;
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+
+
+/* CSS to scroll posts within page */
+#blogposts {
+    width: 70%;
+    aspect-ratio: 3/5;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    border: none;
+
+}
+
+/* CSS to hide scrollbar */
+#blogposts::-webkit-scrollbar {
+    display: none;
+}
+
+/* add shadowing backlit to posts */
+.card-img-overlay {
+    padding: 10px 10px 10px 10px;
+    /* border: 10px solid whitesmoke; */
+    background-color: none;
+    box-shadow: 10px 10px 10px 10px gainsboro;
+}
+
+
+.card-text {
+    color: rgb(30, 57, 30);
+}
+
+.card-title {
+    color: rgb(30, 57, 30);
+}
+.dailyquote {
+    justify-content: first baseline;
+    display: flow-root;
+    transform: rotate(-7deg);
+
+}
+
+#card-img {
+    border: none;
+    margin: auto;
+}
+
+.websiteTitle {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+

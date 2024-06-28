@@ -19,6 +19,8 @@
         <!-- Page-specific CSS -->
         <link rel="stylesheet" type="text/css" href="../global.css">
 
+        <link rel="stylesheet" type="text/css" href="../profile.css">
+
         <title>/POSTS</title>
 
         <!-- Run BEFORE page is finished loading (before window.onload): -->
@@ -42,58 +44,82 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <a class="navbar-brand" href="#">
                         <img src="../images/viness_logo.png" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">Viness</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            class="d-inline-block align-text-top"></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-style: italic;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                            <a class="nav-link active" aria-current="page" href="profile.html">My Vinyard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/posts/index.html">Posts</a>
+                            <a class="nav-link" href="/posts/index.html">Discover Page</a>
                         </li>
                     </ul>
 
-                    <span class="navbar-text">
+                    <span class="navbar-text" style="font-style: italic;">
                         The Secret World of Vinyards
                     </span>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button id="logoutBtn" class="btn btn-outline-success">Logout</button>
                     </form>
-                    
                 </div>
             </div>
         </nav>
 
-        <header>
-            <h1>Profile PAGE</h1>
-            <button id="logoutBtn">Logout</button>
-        </header>
+        <br>
 
-        <div>
-            <button id="viewPostsBtn"><a style="text-decoration: none;" href="index.html">View Other
-                    Vineyards</a></button>
-        </div>
+        <div id="login">
+            <section class="page-section" id="contact">
+
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                        <!-- profile picture goes here -->
+
+                        <div class="col-lg-8 col-xl-6 text-center">
+                            <figure class="figure">
+                                <img src="../images/gardening-a-passion-kevin-meredith.jpg"
+                                    class="figure-img img-fluid rounded" alt="..." style="width: 400px; height: 400px;">
+                                <figcaption class="figure-caption">"Don't judge each day by the harvest you reap but
+                                    by
+                                    the seeds that you plant." - Robert Louis Stevenson</figcaption>
+                            </figure>
+
+                            <hr class="divider" />
+                            <p class="text-muted mb-5" style="font-style: italic;">Whats on your mind? Don't hold it
+                                in, plant it!.</p>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
 
-        <main id="blogEntry">
+            <main id="blogEntry">
+
+                <!-- Message input-->
+                <form class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <textarea id="writeBlogEntry" name="message" style="width:600px; height:600px;"></textarea>
+                </form>
 
 
-            <form>
-                <textarea id="writeBlogEntry" name="message" style="width:200px; height:600px;"></textarea>
-            </form>
+            </main>
 
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <button id="submitBlogBtn" class="btn btn-outline-success" style="width:600px;"><a
+                        href="index.html"></a>Plant
+                </button>
+            </div>
 
-        </main>
+            <footer></footer>
 
-        <div>
-            <button id="submitBlogBtn"><a style="text-decoration: none;" href="/posts/index.html">Grow your
-                    Vine</a></button>
-        </div>
-
-        <footer></footer>
-
-        <!-- Page-specific code -->
-        <script src="profile.js"></script>
+            <!-- Page-specific code -->
+            <script src="profile.js"></script>
     </body>
 
 </html>
