@@ -6,13 +6,14 @@ Practice and experimentation provide experience, and experience provides confide
 
 
 
-<!-- Ask chatGPT to explain stuff to me
-Put code in chatGPT to check code
+# Creating a Microblog for my Pluralsight Capstone
 
-DON’T FORGET READ ME:
+theme: Vineyard
 
-Pictures of website
+ABout us: Discovering Vineyards
+Welcome to our sanctuary of vines and stories, where each post unfolds as a "vine" in our digital vineyard. At our core, we celebrate the tranquility of vineyards and the artistry of gardening, merging nature's calmness with the passion of cultivation.
 
-https://www.makeareadme.com/
+Our Vision
+We envisioned this blog as a tribute to the timeless allure of vineyards, where every "vine" represents a tale waiting to be shared. Our aim is to cultivate a community rooted in appreciation for the beauty of nature and the dedication of those who tend to it.
 
-Google some examples of a readMe - basic ones -->
+![alt text](image-2.png)
