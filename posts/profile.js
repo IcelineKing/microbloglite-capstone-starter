@@ -13,7 +13,8 @@ submitBlogBtn.onclick = (e) => {
   const writeBlogEntry = document.getElementById("writeBlogEntry");
   writeBlogEntry.value = "";
   alert("Yay! You've Grown a New Vine!");
-};
+  window.location.assign("/index.html"); // redirect to post page
+}
 
 //create post in the body
 
@@ -81,8 +82,4 @@ logoutBtn.onclick = (e) => {
   logout();
 };
 
-//MAY USE THIS, NOT SURE YET:
-//inside box to tell user to type text
-// window.onload = function (){
-//   const writeBlogEntry.innerHTML = "Please enter some text"
-// }
+
